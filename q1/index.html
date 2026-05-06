@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Live Name Display</title>
+</head>
+<body>
+
+  <label>Enter your name:</label><br>
+  <input type="text" id="nameInput" placeholder="Type your name..." />
+
+  <p>Your name is: <span id="displayName"></span></p>
+
+  <script>
+    const input = document.getElementById("nameInput");
+    const display = document.getElementById("displayName");
+
+    input.addEventListener("input", function() {
+      display.textContent = input.value;
+    });
+  </script>
+
+</body>
+</html>
